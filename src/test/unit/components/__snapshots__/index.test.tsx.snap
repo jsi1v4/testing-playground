@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`unit-test Table component matches snapshot 1`] = `
+<DocumentFragment>
+  <table
+    data-testid="id-table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Letter
+        </th>
+        <th>
+          Number
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          data-testid="id-table-letter-0"
+        >
+          A
+        </td>
+        <td
+          data-testid="id-table-number-0"
+        >
+          1
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;

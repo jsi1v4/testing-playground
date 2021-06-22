@@ -1,7 +1,12 @@
 import React from "react";
 
+import { useTestHook } from "../hooks";
+import { Table } from "../components";
+
 function Home() {
-  return <h1>Testing</h1>;
+  const { data } = useTestHook();
+
+  return <Table data={data} />;
 }
 
 export default Home;
