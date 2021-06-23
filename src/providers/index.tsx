@@ -3,7 +3,7 @@ import React, { createContext, useContext } from "react";
 import { Service } from "./mock-service";
 import { IService } from "./types";
 
-const Context = createContext<IService>(null as never);
+export const Context = createContext<IService>(null as never);
 
 export const useTestContext = () => useContext(Context);
 

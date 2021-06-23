@@ -18,7 +18,7 @@ describe("unit-test Table component", () => {
 
   it("should render component", async () => {
     const { getByTestId } = render(<Table data={MOCK} />);
-    expect(getByTestId("id-table").innerHTML).toBeDefined();
+    expect(getByTestId("id-table").children).toHaveLength(2);
     expect(getByTestId("id-table-letter-0").innerHTML).toBe("A");
     expect(getByTestId("id-table-number-0").innerHTML).toBe("1");
   });

@@ -10,7 +10,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "test": "jest -u --coverage"
+    "test": "jest -u --coverage",
+    "test:unit": "yarn test src/test/unit",
+    "test:intr": "yarn test src/test/integration",
+    "e2e": ""
   },
   "dependencies": {
     "next": "11.0.0",
