@@ -17,7 +17,8 @@ describe("integration-test Home page", () => {
 
     await waitFor(() => {});
 
-    expect(container.children).toHaveLength(1);
+    expect(container.children).toHaveLength(2);
+    expect(getByText("Testing Playground")).toBeDefined();
     expect(getByText("A")).toBeDefined();
     expect(getByText("B")).toBeDefined();
     expect(getByText("C")).toBeDefined();

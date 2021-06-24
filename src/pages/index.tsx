@@ -7,7 +7,12 @@ import { Table } from "../components";
 export const Home: NextPage = () => {
   const { data } = useTestHook();
 
-  return <Table data={data} />;
+  return (
+    <>
+      <h1>Testing Playground</h1>
+      <Table data={data} />
+    </>
+  );
 };
 
 export default Home;
