@@ -11,9 +11,10 @@
     "dev": "next dev",
     "build": "next build",
     "test": "jest -u --coverage",
-    "test:unit": "yarn test src/test/unit",
-    "test:intr": "yarn test src/test/integration",
-    "e2e": ""
+    "test:unit": "yarn test test/unit",
+    "test:intr": "yarn test test/integration",
+    "e2e": "jest -u -c test/e2e/jest.config.js",
+    "jest:clear": "jest --clearCache"
   },
   "dependencies": {
     "next": "11.0.0",
@@ -22,39 +23,22 @@
   },
   "devDependencies": {
     "@testing-library/react": "^11.2.7",
+    "@types/expect-puppeteer": "^4.4.5",
     "@types/jest": "^26.0.23",
+    "@types/jest-environment-puppeteer": "^4.4.1",
+    "@types/puppeteer": "^5.4.3",
     "@types/react": "17.0.11",
     "babel-jest": "^27.0.5",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.0",
     "jest": "^27.0.5",
+    "jest-puppeteer": "^5.0.4",
+    "puppeteer": "^10.0.0",
     "typescript": "4.3.4"
   },
   "babel": {
     "presets": [
       "next/babel"
     ]
-  },
-  "jest": {
-    "roots": [
-      "<rootDir>"
-    ],
-    "testEnvironment": "jsdom",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json",
-      "jsx"
-    ],
-    "testPathIgnorePatterns": [
-      "<rootDir>[/\\\\](node_modules|.next)[/\\\\]"
-    ],
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "babel-jest"
-    }
   }
 }
