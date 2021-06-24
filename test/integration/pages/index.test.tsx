@@ -1,9 +1,9 @@
 import React from "react";
 import { render, waitFor } from "@testing-library/react";
 
-import { Context } from "../../../providers";
-import { Service } from "../../../providers/mock-service";
-import { Home } from "../../../pages";
+import { Context } from "../../../src/providers";
+import { Service } from "../../../src/providers/mock-service";
+import { Home } from "../../../src/pages";
 
 describe("integration-test Home page", () => {
   it("should render component", async () => {

@@ -1,9 +1,9 @@
 import React from "react";
 import { render, waitFor } from "@testing-library/react";
 
-import { Context } from "../../../providers";
-import { Service } from "../../../providers/mock-service";
-import { useTestHook } from "../../../hooks";
+import { Context } from "../../../src/providers";
+import { Service } from "../../../src/providers/mock-service";
+import { useTestHook } from "../../../src/hooks";
 
 const Component = () => {
   const { data } = useTestHook();
